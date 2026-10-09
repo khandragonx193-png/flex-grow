@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực hành CSS Flex-grow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>THỰC HÀNH CSS FLEX-GROW</h1>
+        <p>Tìm hiểu cách Flex Item mở rộng trong Flex Container</p>
+    </header>
+
+    <main>
+        <section class="bai-tap">
+            <h2>Ví dụ: Flex-grow với 5 Flex Item</h2>
+
+            <p>
+                Item 2 có flex-grow: 1, các item còn lại có flex-grow: 0.
+                Vì vậy, Item 2 sẽ nhận phần không gian còn trống.
+            </p>
+
+            <div class="container">
+                <div class="item item1">
+                    <h3>Item 1</h3>
+                    <p>flex-grow: 0</p>
+                </div>
+
+                <div class="item item2">
+                    <h3>Item 2</h3>
+                    <p>flex-grow: 1</p>
+                </div>
+
+                <div class="item item3">
+                    <h3>Item 3</h3>
+                    <p>flex-grow: 0</p>
+                </div>
+
+                <div class="item item4">
+                    <h3>Item 4</h3>
+                    <p>flex-grow: 0</p>
+                </div>
+
+                <div class="item item5">
+                    <h3>Item 5</h3>
+                    <p>flex-grow: 0</p>
+                </div>
+            </div>
+
+            <div class="ghi-chu">
+                <h3>Nhận xét kết quả</h3>
+                <ul>
+                    <li>Có 5 Flex Item trong cùng một Flex Container.</li>
+                    <li>Item 2 có flex-grow: 1 nên được mở rộng.</li>
+                    <li>4 Item còn lại không nhận thêm không gian từ flex-grow.</li>
+                    <li>flex-grow không có nghĩa là tăng gấp đôi kích thước.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Bài thực hành CSS | Flex-grow Property</p>
+    </footer>
+
+</body>
+</html>

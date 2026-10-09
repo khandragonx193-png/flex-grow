@@ -1,0 +1,108 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background-color: #1d4ed8;
+    color: white;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    margin-top: 0;
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.bai-tap {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #00000012;
+}
+
+.bai-tap h2 {
+    color: #1d4ed8;
+}
+
+.bai-tap > p {
+    line-height: 1.6;
+}
+
+/* Flex Container */
+.container {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    background-color: #dbeafe;
+    border: 2px solid #93c5fd;
+    border-radius: 8px;
+}
+
+/* Cac Flex Item */
+.item {
+    flex-basis: 100px;
+    flex-grow: 0;
+    padding: 20px 10px;
+    text-align: center;
+    background-color: #bfdbfe;
+    border: 1px solid #60a5fa;
+    border-radius: 6px;
+    overflow-wrap: anywhere;
+}
+
+/* Chi Item 2 duoc phep mo rong */
+.item2 {
+    flex-grow: 1;
+    background-color: #86efac;
+    border-color: #22c55e;
+}
+
+.ghi-chu {
+    margin-top: 25px;
+    padding: 15px 20px;
+    background-color: #f8fafc;
+    border-left: 4px solid #22c55e;
+    border-radius: 5px;
+}
+
+.ghi-chu h3 {
+    margin-top: 0;
+}
+
+.ghi-chu li {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+footer {
+    margin-top: 30px;
+    padding: 18px;
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+}
+
+@media (max-width: 650px) {
+    .container {
+        overflow-x: auto;
+    }
+
+    .item {
+        flex-shrink: 0;
+    }
+}
